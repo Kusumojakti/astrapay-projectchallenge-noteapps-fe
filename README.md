@@ -1,27 +1,71 @@
-# AstrapayProjectchallengeNoteappsFe
+# Astrapay Project Challenge FE - Simple Note Apps with Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
-## Development server
+## Prerequisites
+- Node.js (v18 or higher)
+- Npm include with Node.JS
+- Angular 17 +
+- Git
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Quick Start
+1. Clone the Repository
+```
+https://github.com/Kusumojakti/astrapay-projectchallenge-noteapps-fe.git
+cd astrapay-projectchallenge-noteapps-fe
+```
+2. Build application
+```
+npm install
+```
+3. Run the Application
+```
+ng serve
+```
+4. Running the Application
+- After run success, the application will active on `http://localhost:4200/`
 
-## Code scaffolding
+## Application Features
+- View and Read Notes with responsive grid
+- Create and Update Notes
+- Delete unused notes
+- Responsive design to makesure apps still run well on dekstop or mobile
+- Simple Validation
+- Error Handling
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Testing
+Run Unit Test:
+```
+ng test
+```
 
-## Build
+## Form Validation
+- Title and Content must be fill before it save
+- Giving maximum lenght on title and content form
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Preview 
+**Empty State**
 
-## Running unit tests
+![Empty State](./screenshots/empty-state.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**View Notes**
 
-## Running end-to-end tests
+![POST All Notes](./screenshots/note-app-fll.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Create New Notes**
+
+![Add Notes](./screenshots/add-note.png)
+
+**Create New Notes Validation**
+
+![Add New Notes](./screenshots/add-note-validation.png)
+
+**Edit New Notes**
+
+![Edit Notes](./screenshots/edit-note.png)
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Thank you and Happy Coding!
