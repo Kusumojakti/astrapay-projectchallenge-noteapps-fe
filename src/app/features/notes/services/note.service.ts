@@ -19,9 +19,6 @@ export class NoteService {
     private errorSubject = new BehaviorSubject<string | null>(null);
     error$ = this.errorSubject.asObservable();
 
-    // =====================
-    // COLOR SYSTEM
-    // =====================
     private colors = [
         'bg-orange-300',
         'bg-yellow-300',
@@ -47,9 +44,6 @@ export class NoteService {
         return Array.isArray(res) ? res : (res?.data || []);
     }
 
-    // =====================
-    // LOAD NOTES
-    // =====================
     getNotes() {
         this.loadingSubject.next(true);
 
@@ -68,9 +62,6 @@ export class NoteService {
         });
     }
 
-    // =====================
-    // CREATE NOTE
-    // =====================
     addNotes(title: string, content: string) {
         this.loadingSubject.next(true);
 
@@ -88,9 +79,6 @@ export class NoteService {
         });
     }
 
-    // =====================
-    // UPDATE NOTE
-    // =====================
     updateNote(id: string, title: string, content: string) {
         this.loadingSubject.next(true);
 
@@ -112,9 +100,6 @@ export class NoteService {
         });
     }
 
-    // =====================
-    // DELETE NOTE
-    // =====================
     deleteNote(id: string) {
         this.loadingSubject.next(true);
 
